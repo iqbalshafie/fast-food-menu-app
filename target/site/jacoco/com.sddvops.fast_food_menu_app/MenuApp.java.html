@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MenuApp.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">fast-food-menu-app</a> &gt; <a href="index.source.html" class="el_package">com.sddvops.fast_food_menu_app</a> &gt; <span class="el_source">MenuApp.java</span></div><h1>MenuApp.java</h1><pre class="source lang-java linenums">package com.sddvops.fast_food_menu_app;
+import java.util.Scanner;
+
+<span class="nc" id="L4">public class MenuApp {</span>
+    public static void main(String[] args) {
+<span class="nc" id="L6">        Scanner scanner = new Scanner(System.in);</span>
+
+<span class="nc" id="L8">        System.out.println(&quot;Welcome to the Fast Food Restaurant Menu!&quot;);</span>
+<span class="nc" id="L9">        System.out.println(&quot;1. Burger&quot;);</span>
+<span class="nc" id="L10">        System.out.println(&quot;2. Fries&quot;);</span>
+<span class="nc" id="L11">        System.out.println(&quot;3. Soda&quot;);</span>
+        // Add more menu items here
+
+<span class="nc" id="L14">        System.out.print(&quot;Enter the number of your choice: &quot;);</span>
+<span class="nc" id="L15">        int choice = scanner.nextInt();</span>
+
+<span class="nc bnc" id="L17" title="All 4 branches missed.">        switch (choice) {</span>
+            case 1:
+<span class="nc" id="L19">                System.out.println(&quot;You selected Burger&quot;);</span>
+<span class="nc" id="L20">                break;</span>
+            case 2:
+<span class="nc" id="L22">                System.out.println(&quot;You selected Fries&quot;);</span>
+<span class="nc" id="L23">                break;</span>
+            case 3:
+<span class="nc" id="L25">                System.out.println(&quot;You selected Soda&quot;);</span>
+<span class="nc" id="L26">                break;</span>
+            default:
+<span class="nc" id="L28">                System.out.println(&quot;Invalid choice&quot;);</span>
+        }
+
+<span class="nc" id="L31">        scanner.close();</span>
+<span class="nc" id="L32">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
