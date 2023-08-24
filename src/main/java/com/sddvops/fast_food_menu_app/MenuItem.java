@@ -13,6 +13,10 @@ public class MenuItem {
 
 	// Getters and setters
 
+	public MenuItem(FoodItem foodItem, int i) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -35,5 +39,15 @@ public class MenuItem {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	public Object getFoodItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Integer getQuantity() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

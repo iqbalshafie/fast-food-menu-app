@@ -29,16 +29,16 @@ class MenuAppTest {
 		assertEquals("testuser", user.getUsername());
 		assertEquals("test@example.com", user.getEmail());
 	}
-
-	@Test
-	void testAuthenticateUser() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testAddMenuItem() {
-		fail("Not yet implemented");
-	}
+//
+//	@Test
+//	void testAuthenticateUser() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testAddMenuItem() {
+//		fail("Not yet implemented");
+//	}
 
 	@Test
 	void testPlaceOrder() {

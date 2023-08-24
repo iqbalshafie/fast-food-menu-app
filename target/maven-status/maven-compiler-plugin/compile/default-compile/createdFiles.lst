@@ -1,2 +1,5 @@
+com\sddvops\fast_food_menu_app\User.class
+com\sddvops\fast_food_menu_app\Order.class
 com\sddvops\fast_food_menu_app\MenuApp.class
 com\sddvops\fast_food_menu_app\FoodItem.class
+com\sddvops\fast_food_menu_app\MenuItem.class
