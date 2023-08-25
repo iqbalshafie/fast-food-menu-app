@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MenuApp.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">fast-food-menu-app</a> &gt; <a href="index.source.html" class="el_package">com.sddvops.fast_food_menu_app</a> &gt; <span class="el_source">MenuApp.java</span></div><h1>MenuApp.java</h1><pre class="source lang-java linenums">package com.sddvops.fast_food_menu_app;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class MenuApp {
+    private List&lt;User&gt; users;
+    private List&lt;MenuItem&gt; menuItems;
+    private List&lt;Order&gt; orders;
+
+<span class="fc" id="L13">    public MenuApp() {</span>
+<span class="fc" id="L14">        users = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L15">        menuItems = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">        orders = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L17">    }</span>
+
+    public void registerUser(String username, String password, String email) {
+<span class="fc" id="L20">        User newUser = new User(username, password, email);</span>
+<span class="fc" id="L21">        users.add(newUser);</span>
+<span class="fc" id="L22">    }</span>
+
+    public User authenticateUser(String username, String password) {
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">        for (User user : users) {</span>
+<span class="pc bpc" id="L26" title="2 of 4 branches missed.">            if (user.getUsername().equals(username) &amp;&amp; user.getPassword().equals(password)) {</span>
+<span class="fc" id="L27">                return user;</span>
+            }
+<span class="nc" id="L29">        }</span>
+<span class="nc" id="L30">        return null; // User not found</span>
+    }
+
+    // Other user and authentication methods
+
+    public void addMenuItem(MenuItem menuItem) {
+<span class="nc" id="L36">        menuItems.add(menuItem);</span>
+<span class="nc" id="L37">    }</span>
+
+    public void placeOrder(User user, List&lt;MenuItem&gt; items) {
+<span class="nc" id="L40">        Order newOrder = new Order(user, items);</span>
+<span class="nc" id="L41">        orders.add(newOrder);</span>
+        // Process payment and update order status
+<span class="nc" id="L43">    }</span>
+
+    // Other order and menu management methods
+	public static void main(String[] args) {
+<span class="nc" id="L47">		Scanner scanner = new Scanner(System.in);</span>
+
+<span class="nc" id="L49">		System.out.println(&quot;Welcome to the Fast Food Restaurant Menu!&quot;);</span>
+<span class="nc" id="L50">		System.out.println(&quot;1. Burger&quot;);</span>
+<span class="nc" id="L51">		System.out.println(&quot;2. Fries&quot;);</span>
+<span class="nc" id="L52">		System.out.println(&quot;3. Soda&quot;);</span>
+<span class="nc" id="L53">		System.out.println(&quot;4. Ice Cream&quot;);</span>
+		// Add more menu items here
+
+<span class="nc" id="L56">		System.out.print(&quot;Enter the number of your choice: &quot;);</span>
+<span class="nc" id="L57">		int choice = scanner.nextInt();</span>
+
+<span class="nc bnc" id="L59" title="All 5 branches missed.">		switch (choice) {</span>
+		case 1:
+<span class="nc" id="L61">			System.out.println(&quot;You selected Burger&quot;);</span>
+<span class="nc" id="L62">			break;</span>
+		case 2:
+<span class="nc" id="L64">			System.out.println(&quot;You selected Fries&quot;);</span>
+<span class="nc" id="L65">			break;</span>
+		case 3:
+<span class="nc" id="L67">			System.out.println(&quot;You selected Soda&quot;);</span>
+<span class="nc" id="L68">			break;</span>
+		case 4:
+<span class="nc" id="L70">			System.out.println(&quot;You selected Ice Cream&quot;);</span>
+<span class="nc" id="L71">			break;</span>
+		default:
+<span class="nc" id="L73">			System.out.println(&quot;Invalid choice&quot;);</span>
+		}
+
+<span class="nc" id="L76">		scanner.close();</span>
+<span class="nc" id="L77">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

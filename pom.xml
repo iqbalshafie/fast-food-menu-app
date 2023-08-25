@@ -11,15 +11,13 @@
 
 	<name>fast-food-menu-app</name>
 	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
+	<url>http://www.iqbalshafieCWF.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 		<!-- jacoco properties -->
 		<jacoco.groupId>org.jacoco</jacoco.groupId>
 		<jacoco.artifactId>jacoco-maven-plugin</jacoco.artifactId>

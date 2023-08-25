@@ -55,9 +55,11 @@ class MenuAppTest {
 		assertFalse(order.isPaid());
 	}
 
-	@Test
+@Test
 	void testMain() {
-		fail("Not yet implemented");
+		MenuApp menuApp = new MenuApp();
+		
+		menuApp.testMain();
 	}
 
 }

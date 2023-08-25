@@ -51,7 +51,7 @@ public class MenuApp {
 		System.out.println("2. Fries");
 		System.out.println("3. Soda");
 		System.out.println("4. Ice Cream");
-		// Add more menu items here
+		System.out.println("5. Happy Meal");
 
 		System.out.print("Enter the number of your choice: ");
 		int choice = scanner.nextInt();
@@ -69,10 +69,18 @@ public class MenuApp {
 		case 4:
 			System.out.println("You selected Ice Cream");
 			break;
+		case 5:
+			System.out.println("You selected Happy Meal");
+			break;
 		default:
 			System.out.println("Invalid choice");
 		}
 
 		scanner.close();
+	}
+
+	public void testMain() {
+		// TODO Auto-generated method stub
+		
 	}
 }
