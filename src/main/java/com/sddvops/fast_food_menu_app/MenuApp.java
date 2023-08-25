@@ -51,7 +51,7 @@ public class MenuApp {
 		System.out.println("2. Fries");
 		System.out.println("3. Soda");
 		System.out.println("4. Ice Cream");
-		System.out.println("5. Happy Meal");
+		System.out.println("5. Pasta");
 
 		System.out.print("Enter the number of your choice: ");
 		int choice = scanner.nextInt();
